@@ -9,5 +9,6 @@ target 'jandan' do
   pod 'AFNetworking'
   pod 'SDWebImage'
   
+  pod 'LookinServer', :configurations => ['Debug']
 
 end

@@ -11,6 +11,7 @@
 #import "NewsBean.h"
 #import "NewsListLoader.h"
 #import "NewsCellTableViewCell.h"
+#import "NewsDetailViewController.h"
 @interface NewsViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 @property(nonatomic,strong,readwrite) UITableView *tableView;
@@ -59,13 +60,22 @@
     NewsCellTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"id"];
     if(!cell){
         cell = [[NewsCellTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"id"];
-        
     }
     
     [ cell setData: [self.dataArray objectAtIndex:indexPath.row ] ];
     
     return cell;
 
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    
+    NewsDetailViewController *detailViewController = [[NewsDetailViewController alloc]init];
+    detailViewController.url = [self.dataArray objectAtIndex:indexPath.row].url;
+    [self.navigationController pushViewController:detailViewController animated:YES];
+    
+    
 }
 
 

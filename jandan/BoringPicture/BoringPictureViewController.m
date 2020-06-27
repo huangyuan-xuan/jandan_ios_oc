@@ -7,7 +7,7 @@
 //
 
 #import "BoringPictureViewController.h"
-
+#import <SDWebImage.h>
 @interface BoringPictureViewController ()
 
 @end
@@ -17,6 +17,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
    self.view.backgroundColor = [UIColor blueColor];
+    
+    [self.view addSubview:({
+        
+        UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
+        
+        [imageView sd_setImageWithURL:@"http://img.jandan.net/news/2019/03/32b1db99c0db99b5be9fa93bc6757d95.jpg" completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
+            NSLog(@"");
+        }];
+        
+        imageView;
+        
+    })];
+    
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated{

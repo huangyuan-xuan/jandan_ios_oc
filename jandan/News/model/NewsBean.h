@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,copy) NSString *title;
 @property(nonatomic,copy) NSString *excerpt;
 @property(nonatomic,copy) NSString *date;
-@property(nonatomic) NSNumber *commentCount;
+@property(nonatomic) NSInteger *commentCount;
 @property(nonatomic,copy) NSString *commentStatus;
 @property(nonatomic) NewsAuthor *newsAthor;
 @property(nonatomic) CustomFields * customFields;

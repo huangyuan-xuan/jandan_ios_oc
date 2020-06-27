@@ -20,7 +20,7 @@
             self.excerpt = [jsonDictionary objectForKey:@"excerpt"];
             self.url = [jsonDictionary objectForKey:@"url"];
             self.date = [jsonDictionary objectForKey:@"date"];
-            self.commentCount = [jsonDictionary objectForKey:@"comment_count"];
+            self.commentCount = [[jsonDictionary objectForKey:@"comment_count"] integerValue];
             
             self.newsAthor = [[NewsAuthor alloc]fromDictionary:[jsonDictionary objectForKey:@"author"]];
             self.customFields = [[CustomFields alloc]fromDictionary: [jsonDictionary objectForKey:@"custom_fields"]];
