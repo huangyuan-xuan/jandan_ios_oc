@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5BFC11B024A7450400237C94 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFC11AF24A7450400237C94 /* MainViewController.m */; };
+		5BFC11B424A747DB00237C94 /* NewsAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFC11B324A747DB00237C94 /* NewsAuthor.m */; };
+		5BFC11B724A7499800237C94 /* CustomFields.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFC11B624A7499800237C94 /* CustomFields.m */; };
+		5BFC11BA24A749ED00237C94 /* NewsBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFC11B924A749ED00237C94 /* NewsBean.m */; };
+		5BFC11BD24A74A7700237C94 /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFC11BC24A74A7700237C94 /* NewsModel.m */; };
+		5BFC11C024A74CFB00237C94 /* NewsListLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFC11BF24A74CFB00237C94 /* NewsListLoader.m */; };
+		5BFC11C324A7515C00237C94 /* NewsCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFC11C224A7515C00237C94 /* NewsCellTableViewCell.m */; };
+		ECE4B255AD353B9395A31108 /* libPods-jandan.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF5FBC77D424675F890B3E1 /* libPods-jandan.a */; };
 		F10BEAD824A5A1D700C52CD7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F10BEAD724A5A1D700C52CD7 /* AppDelegate.m */; };
 		F10BEAE124A5A1D700C52CD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F10BEADF24A5A1D700C52CD7 /* Main.storyboard */; };
 		F10BEAE324A5A1D800C52CD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F10BEAE224A5A1D800C52CD7 /* Assets.xcassets */; };
@@ -19,6 +27,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3BF5FBC77D424675F890B3E1 /* libPods-jandan.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-jandan.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BFC11AE24A7450400237C94 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		5BFC11AF24A7450400237C94 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		5BFC11B224A747DB00237C94 /* NewsAuthor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsAuthor.h; sourceTree = "<group>"; };
+		5BFC11B324A747DB00237C94 /* NewsAuthor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsAuthor.m; sourceTree = "<group>"; };
+		5BFC11B524A7499800237C94 /* CustomFields.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomFields.h; sourceTree = "<group>"; };
+		5BFC11B624A7499800237C94 /* CustomFields.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomFields.m; sourceTree = "<group>"; };
+		5BFC11B824A749ED00237C94 /* NewsBean.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsBean.h; sourceTree = "<group>"; };
+		5BFC11B924A749ED00237C94 /* NewsBean.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsBean.m; sourceTree = "<group>"; };
+		5BFC11BB24A74A7700237C94 /* NewsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsModel.h; sourceTree = "<group>"; };
+		5BFC11BC24A74A7700237C94 /* NewsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsModel.m; sourceTree = "<group>"; };
+		5BFC11BE24A74CFB00237C94 /* NewsListLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsListLoader.h; sourceTree = "<group>"; };
+		5BFC11BF24A74CFB00237C94 /* NewsListLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsListLoader.m; sourceTree = "<group>"; };
+		5BFC11C124A7515C00237C94 /* NewsCellTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsCellTableViewCell.h; sourceTree = "<group>"; };
+		5BFC11C224A7515C00237C94 /* NewsCellTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsCellTableViewCell.m; sourceTree = "<group>"; };
+		9217922F6F60E6CEE814C174 /* Pods-jandan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jandan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-jandan/Pods-jandan.debug.xcconfig"; sourceTree = "<group>"; };
+		CA30D04686A47E4C037DA8C8 /* Pods-jandan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jandan.release.xcconfig"; path = "Pods/Target Support Files/Pods-jandan/Pods-jandan.release.xcconfig"; sourceTree = "<group>"; };
 		F10BEAD324A5A1D700C52CD7 /* jandan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jandan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F10BEAD624A5A1D700C52CD7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F10BEAD724A5A1D700C52CD7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -42,17 +67,54 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECE4B255AD353B9395A31108 /* libPods-jandan.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5BFC11B124A747A800237C94 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				5BFC11B224A747DB00237C94 /* NewsAuthor.h */,
+				5BFC11B324A747DB00237C94 /* NewsAuthor.m */,
+				5BFC11B524A7499800237C94 /* CustomFields.h */,
+				5BFC11B624A7499800237C94 /* CustomFields.m */,
+				5BFC11B824A749ED00237C94 /* NewsBean.h */,
+				5BFC11B924A749ED00237C94 /* NewsBean.m */,
+				5BFC11BB24A74A7700237C94 /* NewsModel.h */,
+				5BFC11BC24A74A7700237C94 /* NewsModel.m */,
+				5BFC11BE24A74CFB00237C94 /* NewsListLoader.h */,
+				5BFC11BF24A74CFB00237C94 /* NewsListLoader.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		7D92F2B5012451F4CB7C6499 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9217922F6F60E6CEE814C174 /* Pods-jandan.debug.xcconfig */,
+				CA30D04686A47E4C037DA8C8 /* Pods-jandan.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E00CF06CF7A6F13A410756BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BF5FBC77D424675F890B3E1 /* libPods-jandan.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F10BEACA24A5A1D700C52CD7 = {
 			isa = PBXGroup;
 			children = (
 				F10BEAD524A5A1D700C52CD7 /* jandan */,
 				F10BEAD424A5A1D700C52CD7 /* Products */,
+				7D92F2B5012451F4CB7C6499 /* Pods */,
+				E00CF06CF7A6F13A410756BF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +139,8 @@
 				F10BEAE424A5A1D800C52CD7 /* LaunchScreen.storyboard */,
 				F10BEAE724A5A1D800C52CD7 /* Info.plist */,
 				F10BEAE824A5A1D800C52CD7 /* main.m */,
+				5BFC11AE24A7450400237C94 /* MainViewController.h */,
+				5BFC11AF24A7450400237C94 /* MainViewController.m */,
 			);
 			path = jandan;
 			sourceTree = "<group>";
@@ -84,9 +148,12 @@
 		F10BEAF224A633F800C52CD7 /* News */ = {
 			isa = PBXGroup;
 			children = (
+				5BFC11B124A747A800237C94 /* model */,
 				F10BEAF324A6340000C52CD7 /* detail */,
 				F10BEB1824A64A7E00C52CD7 /* NewsViewController.h */,
 				F10BEB1924A64A7E00C52CD7 /* NewsViewController.m */,
+				5BFC11C124A7515C00237C94 /* NewsCellTableViewCell.h */,
+				5BFC11C224A7515C00237C94 /* NewsCellTableViewCell.m */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -125,6 +192,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F10BEAEC24A5A1D800C52CD7 /* Build configuration list for PBXNativeTarget "jandan" */;
 			buildPhases = (
+				6489993CF67289A49C1A8771 /* [CP] Check Pods Manifest.lock */,
 				F10BEACF24A5A1D700C52CD7 /* Sources */,
 				F10BEAD024A5A1D700C52CD7 /* Frameworks */,
 				F10BEAD124A5A1D700C52CD7 /* Resources */,
@@ -183,6 +251,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6489993CF67289A49C1A8771 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-jandan-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F10BEACF24A5A1D700C52CD7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -191,9 +284,16 @@
 				F10BEB1724A64A6D00C52CD7 /* BoringPictureViewController.m in Sources */,
 				F10BEAF624A6341800C52CD7 /* NewsDetailViewController.m in Sources */,
 				F10BEAD824A5A1D700C52CD7 /* AppDelegate.m in Sources */,
+				5BFC11B724A7499800237C94 /* CustomFields.m in Sources */,
 				F10BEB1424A64A5900C52CD7 /* ReadilyViewController.m in Sources */,
+				5BFC11B024A7450400237C94 /* MainViewController.m in Sources */,
+				5BFC11BD24A74A7700237C94 /* NewsModel.m in Sources */,
 				F10BEAE924A5A1D800C52CD7 /* main.m in Sources */,
 				F10BEB1A24A64A7E00C52CD7 /* NewsViewController.m in Sources */,
+				5BFC11BA24A749ED00237C94 /* NewsBean.m in Sources */,
+				5BFC11B424A747DB00237C94 /* NewsAuthor.m in Sources */,
+				5BFC11C024A74CFB00237C94 /* NewsListLoader.m in Sources */,
+				5BFC11C324A7515C00237C94 /* NewsCellTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,11 +431,13 @@
 		};
 		F10BEAED24A5A1D800C52CD7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9217922F6F60E6CEE814C174 /* Pods-jandan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B892QN6N8X;
 				INFOPLIST_FILE = jandan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -348,11 +450,13 @@
 		};
 		F10BEAEE24A5A1D800C52CD7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA30D04686A47E4C037DA8C8 /* Pods-jandan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B892QN6N8X;
 				INFOPLIST_FILE = jandan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
