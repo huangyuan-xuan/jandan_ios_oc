@@ -24,7 +24,7 @@
     
     if(self){
         [self.contentView addSubview:({
-            _title = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, self.contentView.frame.size.width, 100)];
+            _title = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 100)];
             _title.adjustsFontSizeToFitWidth = YES;
             _title.numberOfLines = 2;
             
