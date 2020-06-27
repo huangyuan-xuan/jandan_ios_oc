@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  NewsViewController.h
 //  jandan
 //
 //  Created by 代烁 on 2020/6/26.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-@property(strong,nonatomic,readwrite) UIWindow *window;
+NS_ASSUME_NONNULL_BEGIN
+
+@interface NewsViewController : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END

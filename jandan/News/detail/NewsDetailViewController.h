@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  NewsDetailViewController.h
 //  jandan
 //
 //  Created by 代烁 on 2020/6/26.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface NewsDetailViewController : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END

@@ -1,5 +1,5 @@
 //
-//  SceneDelegate.h
+//  BoringPictureViewController.h
 //  jandan
 //
 //  Created by 代烁 on 2020/6/26.
@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SceneDelegate : UIResponder <UIWindowSceneDelegate>
+NS_ASSUME_NONNULL_BEGIN
 
-@property (strong, nonatomic) UIWindow * window;
+@interface BoringPictureViewController : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END

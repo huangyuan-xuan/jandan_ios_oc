@@ -8,27 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		F10BEAD824A5A1D700C52CD7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F10BEAD724A5A1D700C52CD7 /* AppDelegate.m */; };
-		F10BEADB24A5A1D700C52CD7 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F10BEADA24A5A1D700C52CD7 /* SceneDelegate.m */; };
-		F10BEADE24A5A1D700C52CD7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F10BEADD24A5A1D700C52CD7 /* ViewController.m */; };
 		F10BEAE124A5A1D700C52CD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F10BEADF24A5A1D700C52CD7 /* Main.storyboard */; };
 		F10BEAE324A5A1D800C52CD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F10BEAE224A5A1D800C52CD7 /* Assets.xcassets */; };
 		F10BEAE624A5A1D800C52CD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F10BEAE424A5A1D800C52CD7 /* LaunchScreen.storyboard */; };
 		F10BEAE924A5A1D800C52CD7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F10BEAE824A5A1D800C52CD7 /* main.m */; };
+		F10BEAF624A6341800C52CD7 /* NewsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F10BEAF524A6341800C52CD7 /* NewsDetailViewController.m */; };
+		F10BEB1424A64A5900C52CD7 /* ReadilyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F10BEB1324A64A5900C52CD7 /* ReadilyViewController.m */; };
+		F10BEB1724A64A6D00C52CD7 /* BoringPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F10BEB1624A64A6D00C52CD7 /* BoringPictureViewController.m */; };
+		F10BEB1A24A64A7E00C52CD7 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F10BEB1924A64A7E00C52CD7 /* NewsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F10BEAD324A5A1D700C52CD7 /* jandan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jandan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F10BEAD624A5A1D700C52CD7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F10BEAD724A5A1D700C52CD7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F10BEAD924A5A1D700C52CD7 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		F10BEADA24A5A1D700C52CD7 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		F10BEADC24A5A1D700C52CD7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F10BEADD24A5A1D700C52CD7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F10BEAE024A5A1D700C52CD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F10BEAE224A5A1D800C52CD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F10BEAE524A5A1D800C52CD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F10BEAE724A5A1D800C52CD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F10BEAE824A5A1D800C52CD7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F10BEAF424A6341800C52CD7 /* NewsDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsDetailViewController.h; sourceTree = "<group>"; };
+		F10BEAF524A6341800C52CD7 /* NewsDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsDetailViewController.m; sourceTree = "<group>"; };
+		F10BEB1224A64A5900C52CD7 /* ReadilyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReadilyViewController.h; sourceTree = "<group>"; };
+		F10BEB1324A64A5900C52CD7 /* ReadilyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReadilyViewController.m; sourceTree = "<group>"; };
+		F10BEB1524A64A6D00C52CD7 /* BoringPictureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BoringPictureViewController.h; sourceTree = "<group>"; };
+		F10BEB1624A64A6D00C52CD7 /* BoringPictureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BoringPictureViewController.m; sourceTree = "<group>"; };
+		F10BEB1824A64A7E00C52CD7 /* NewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
+		F10BEB1924A64A7E00C52CD7 /* NewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,12 +67,11 @@
 		F10BEAD524A5A1D700C52CD7 /* jandan */ = {
 			isa = PBXGroup;
 			children = (
+				F10BEB1124A64A2A00C52CD7 /* Readily */,
+				F10BEB1024A6496C00C52CD7 /* BoringPicture */,
+				F10BEAF224A633F800C52CD7 /* News */,
 				F10BEAD624A5A1D700C52CD7 /* AppDelegate.h */,
 				F10BEAD724A5A1D700C52CD7 /* AppDelegate.m */,
-				F10BEAD924A5A1D700C52CD7 /* SceneDelegate.h */,
-				F10BEADA24A5A1D700C52CD7 /* SceneDelegate.m */,
-				F10BEADC24A5A1D700C52CD7 /* ViewController.h */,
-				F10BEADD24A5A1D700C52CD7 /* ViewController.m */,
 				F10BEADF24A5A1D700C52CD7 /* Main.storyboard */,
 				F10BEAE224A5A1D800C52CD7 /* Assets.xcassets */,
 				F10BEAE424A5A1D800C52CD7 /* LaunchScreen.storyboard */,
@@ -74,6 +79,43 @@
 				F10BEAE824A5A1D800C52CD7 /* main.m */,
 			);
 			path = jandan;
+			sourceTree = "<group>";
+		};
+		F10BEAF224A633F800C52CD7 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				F10BEAF324A6340000C52CD7 /* detail */,
+				F10BEB1824A64A7E00C52CD7 /* NewsViewController.h */,
+				F10BEB1924A64A7E00C52CD7 /* NewsViewController.m */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		F10BEAF324A6340000C52CD7 /* detail */ = {
+			isa = PBXGroup;
+			children = (
+				F10BEAF424A6341800C52CD7 /* NewsDetailViewController.h */,
+				F10BEAF524A6341800C52CD7 /* NewsDetailViewController.m */,
+			);
+			path = detail;
+			sourceTree = "<group>";
+		};
+		F10BEB1024A6496C00C52CD7 /* BoringPicture */ = {
+			isa = PBXGroup;
+			children = (
+				F10BEB1524A64A6D00C52CD7 /* BoringPictureViewController.h */,
+				F10BEB1624A64A6D00C52CD7 /* BoringPictureViewController.m */,
+			);
+			path = BoringPicture;
+			sourceTree = "<group>";
+		};
+		F10BEB1124A64A2A00C52CD7 /* Readily */ = {
+			isa = PBXGroup;
+			children = (
+				F10BEB1224A64A5900C52CD7 /* ReadilyViewController.h */,
+				F10BEB1324A64A5900C52CD7 /* ReadilyViewController.m */,
+			);
+			path = Readily;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,10 +188,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F10BEADE24A5A1D700C52CD7 /* ViewController.m in Sources */,
+				F10BEB1724A64A6D00C52CD7 /* BoringPictureViewController.m in Sources */,
+				F10BEAF624A6341800C52CD7 /* NewsDetailViewController.m in Sources */,
 				F10BEAD824A5A1D700C52CD7 /* AppDelegate.m in Sources */,
+				F10BEB1424A64A5900C52CD7 /* ReadilyViewController.m in Sources */,
 				F10BEAE924A5A1D800C52CD7 /* main.m in Sources */,
-				F10BEADB24A5A1D700C52CD7 /* SceneDelegate.m in Sources */,
+				F10BEB1A24A64A7E00C52CD7 /* NewsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
