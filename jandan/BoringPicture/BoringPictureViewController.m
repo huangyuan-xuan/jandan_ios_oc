@@ -8,30 +8,69 @@
 
 #import "BoringPictureViewController.h"
 #import <SDWebImage.h>
-@interface BoringPictureViewController ()
-
+#import "BoringPictureListLoader.h"
+#import "BoringPictureBean.h"
+#import "CellBoringPicture.h"
+@interface BoringPictureViewController ()<UITableViewDataSource,UITableViewDelegate>
+@property(nonatomic,strong,readwrite) UITableView *tableView;
+@property(nonatomic,strong,readwrite) NSArray<BoringPictureBean *> *dataArray;
+@property(nonatomic,strong,readwrite) BoringPictureListLoader *listLoader;
 @end
 
 @implementation BoringPictureViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   self.view.backgroundColor = [UIColor blueColor];
     
-    [self.view addSubview:({
-        
-        UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
-        
-        [imageView sd_setImageWithURL:@"http://img.jandan.net/news/2019/03/32b1db99c0db99b5be9fa93bc6757d95.jpg" completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
-            NSLog(@"");
-        }];
-        
-        imageView;
-        
-    })];
+    self.view.backgroundColor = [UIColor whiteColor];
     
+    
+    _tableView = [[UITableView alloc]initWithFrame:self.view.bounds];
+    _tableView.delegate = self;
+    _tableView.dataSource = self;
+    _tableView.rowHeight = UITableViewAutomaticDimension;
+    [self.view addSubview:_tableView];
+    
+    
+    self.listLoader = [[BoringPictureListLoader alloc]init];
+    __weak typeof (self)wself = self;
+    [self.listLoader loadBoringPictureListWithBlock:^(BOOL success, NSArray<BoringPictureBean *> * _Nonnull dataArray) {
+        
+        __strong typeof (wself) strongSelf = wself;
+        if(success){
+            strongSelf.dataArray = dataArray;
+            [strongSelf.tableView reloadData];
+        }else{
+            
+        }
+    }];
     
 }
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 200;
+}
+
+
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return _dataArray.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    CellBoringPicture * cell = [tableView dequeueReusableCellWithIdentifier:@"CellBoringPicture"];
+    if(!cell){
+        cell = [[CellBoringPicture alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"CellBoringPicture"];
+    }
+    
+    [cell setData: [self.dataArray objectAtIndex:indexPath.row ] ];
+    
+    return cell;
+}
+
+
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
@@ -40,6 +79,6 @@
 
 -(void) viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
-    self.navigationController.navigationBarHidden =NO;
+    //    self.navigationController.navigationBarHidden =NO;
 }
 @end

@@ -29,6 +29,7 @@
     _tableView.dataSource = self;
     _tableView.delegate = self;
     [self.view addSubview:_tableView];
+    
     self.listLoader = [[NewsListLoader alloc]init];
     __weak typeof (self)wself = self;
     [self.listLoader loadNewsListDataWithFinishBlock:^(BOOL success, NSArray<NewsBean *> * _Nonnull dataArray) {
@@ -88,20 +89,14 @@
 
 -(void) viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
-    self.navigationController.navigationBarHidden =NO;
+//    self.navigationController.navigationBarHidden =NO;
 }
 
 
 
 -(void) pushToOther{
         NewsDetailViewController * detail = [[NewsDetailViewController alloc]init];
-    
-        
-    
-        [self.navigationController pushViewController:detail animated:YES];
-    
-    
-    
+        [self.navigationController pushViewController:detail animated:YES]; 
 }
 
 @end

@@ -14,7 +14,7 @@
 
 -(void) loadNewsListDataWithFinishBlock:(NewsListLoaderFinishBlock)finishBlock{
     
-    NSString *urlString = @"https://i.jandan.net/?oxwlxojflwblxbsapi=get_recent_posts&include=url,date,tags,author,title,excerpt,comment_count,comment_status,custom_fields&custom_fields=thumb_c,views&dev=1";
+    NSString *urlString = @"https://i.jandan.net/?oxwlxojflwblxbsapi=get_recent_posts&include=url,date,tags,author,title,excerpt,comment_count,comment_status,custom_fields&custom_fields=thumb_c,views&dev=1&page=1";
     
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.responseSerializer =[AFHTTPResponseSerializer serializer];

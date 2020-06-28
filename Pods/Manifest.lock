@@ -14,27 +14,23 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
-  - LookinServer (1.0.0)
   - SDWebImage (5.8.1):
     - SDWebImage/Core (= 5.8.1)
   - SDWebImage/Core (5.8.1)
 
 DEPENDENCIES:
   - AFNetworking
-  - LookinServer
   - SDWebImage
 
 SPEC REPOS:
   https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
     - AFNetworking
-    - LookinServer
     - SDWebImage
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
-  LookinServer: 0002891cd3cec5e082a910e897dfe71b4f06b89e
   SDWebImage: e3eae2eda88578db0685a0c88597fdadd9433f05
 
-PODFILE CHECKSUM: ac0db617c6595a0c9014efaedfff26e2fad69b97
+PODFILE CHECKSUM: 2d3daf922d4c534c269cd7ba67509cecc467fb7c
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.5.3

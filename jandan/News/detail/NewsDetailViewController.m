@@ -19,9 +19,11 @@
     
     
     [super viewDidLoad];
-    UIBarButtonItem *backBtn = [[UIBarButtonItem alloc] init];
-    backBtn.title = @"返回";
-    self.navigationItem.backBarButtonItem = backBtn;    
+    UIBarButtonItem *backBtn = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStyleDone target:self action:@selector(pop)];
+    self.navigationItem.leftBarButtonItem = backBtn;
+
+    
+    
     
     [self.view addSubview:({
         
@@ -68,5 +70,15 @@
 }
 
 
+-(void)pop{
+    
+    if(self.webView.canGoBack){
+        self.webView.goBack;
+    }else{
+         [self.navigationController popViewControllerAnimated:YES];
+    }
+    
+   
+}
 
 @end
