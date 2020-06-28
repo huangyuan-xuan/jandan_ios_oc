@@ -29,6 +29,7 @@
     _tableView.delegate = self;
     _tableView.dataSource = self;
     _tableView.rowHeight = UITableViewAutomaticDimension;
+    _tableView.estimatedRowHeight = 150;
     [self.view addSubview:_tableView];
     
     
@@ -49,7 +50,7 @@
 
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 200;
+    return 150;
 }
 
 
