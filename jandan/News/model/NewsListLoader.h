@@ -10,7 +10,7 @@
 @class NewsBean;
 NS_ASSUME_NONNULL_BEGIN
 
-typedef void(^NewsListLoaderFinishBlock)(BOOL success,NSArray<NewsBean *> *dataArray);
+typedef void(^NewsListLoaderFinishBlock)(BOOL success, NSArray<NewsBean *> * _Nullable dataArray);
 
 
 @interface NewsListLoader : NSObject

@@ -11,6 +11,8 @@
 		5B5C0D8724A8536B00B1A4EF /* BoringPictureBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5C0D8624A8536B00B1A4EF /* BoringPictureBean.m */; };
 		5B5C0D8A24A8557200B1A4EF /* BoringPictureListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5C0D8924A8557200B1A4EF /* BoringPictureListModel.m */; };
 		5B5C0D8D24A86A2100B1A4EF /* CellBoringPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5C0D8C24A86A2100B1A4EF /* CellBoringPicture.m */; };
+		5B5C0D9124A9D7C800B1A4EF /* ReadilyListLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5C0D9024A9D7C800B1A4EF /* ReadilyListLoader.m */; };
+		5B5C0D9424A9DCF700B1A4EF /* CellReadily.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5C0D9324A9DCF700B1A4EF /* CellReadily.m */; };
 		5BFC11B024A7450400237C94 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFC11AF24A7450400237C94 /* MainViewController.m */; };
 		5BFC11B424A747DB00237C94 /* NewsAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFC11B324A747DB00237C94 /* NewsAuthor.m */; };
 		5BFC11B724A7499800237C94 /* CustomFields.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFC11B624A7499800237C94 /* CustomFields.m */; };
@@ -40,6 +42,10 @@
 		5B5C0D8924A8557200B1A4EF /* BoringPictureListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BoringPictureListModel.m; sourceTree = "<group>"; };
 		5B5C0D8B24A86A2100B1A4EF /* CellBoringPicture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CellBoringPicture.h; sourceTree = "<group>"; };
 		5B5C0D8C24A86A2100B1A4EF /* CellBoringPicture.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CellBoringPicture.m; sourceTree = "<group>"; };
+		5B5C0D8F24A9D7C800B1A4EF /* ReadilyListLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReadilyListLoader.h; sourceTree = "<group>"; };
+		5B5C0D9024A9D7C800B1A4EF /* ReadilyListLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReadilyListLoader.m; sourceTree = "<group>"; };
+		5B5C0D9224A9DCF700B1A4EF /* CellReadily.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CellReadily.h; sourceTree = "<group>"; };
+		5B5C0D9324A9DCF700B1A4EF /* CellReadily.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CellReadily.m; sourceTree = "<group>"; };
 		5BFC11AE24A7450400237C94 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		5BFC11AF24A7450400237C94 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		5BFC11B224A747DB00237C94 /* NewsAuthor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsAuthor.h; sourceTree = "<group>"; };
@@ -95,6 +101,15 @@
 				5B5C0D8624A8536B00B1A4EF /* BoringPictureBean.m */,
 				5B5C0D8824A8557200B1A4EF /* BoringPictureListModel.h */,
 				5B5C0D8924A8557200B1A4EF /* BoringPictureListModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		5B5C0D8E24A9D78D00B1A4EF /* model */ = {
+			isa = PBXGroup;
+			children = (
+				5B5C0D8F24A9D7C800B1A4EF /* ReadilyListLoader.h */,
+				5B5C0D9024A9D7C800B1A4EF /* ReadilyListLoader.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -207,8 +222,11 @@
 		F10BEB1124A64A2A00C52CD7 /* Readily */ = {
 			isa = PBXGroup;
 			children = (
+				5B5C0D8E24A9D78D00B1A4EF /* model */,
 				F10BEB1224A64A5900C52CD7 /* ReadilyViewController.h */,
 				F10BEB1324A64A5900C52CD7 /* ReadilyViewController.m */,
+				5B5C0D9224A9DCF700B1A4EF /* CellReadily.h */,
+				5B5C0D9324A9DCF700B1A4EF /* CellReadily.m */,
 			);
 			path = Readily;
 			sourceTree = "<group>";
@@ -318,10 +336,12 @@
 				5B5C0D8D24A86A2100B1A4EF /* CellBoringPicture.m in Sources */,
 				5BFC11BD24A74A7700237C94 /* NewsModel.m in Sources */,
 				5B5C0D8724A8536B00B1A4EF /* BoringPictureBean.m in Sources */,
+				5B5C0D9424A9DCF700B1A4EF /* CellReadily.m in Sources */,
 				F10BEAE924A5A1D800C52CD7 /* main.m in Sources */,
 				5B5C0D8424A8531100B1A4EF /* BoringPictureListLoader.m in Sources */,
 				F10BEB1A24A64A7E00C52CD7 /* NewsViewController.m in Sources */,
 				5BFC11BA24A749ED00237C94 /* NewsBean.m in Sources */,
+				5B5C0D9124A9D7C800B1A4EF /* ReadilyListLoader.m in Sources */,
 				5BFC11B424A747DB00237C94 /* NewsAuthor.m in Sources */,
 				5B5C0D8A24A8557200B1A4EF /* BoringPictureListModel.m in Sources */,
 				5BFC11C024A74CFB00237C94 /* NewsListLoader.m in Sources */,

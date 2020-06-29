@@ -10,7 +10,7 @@
 #import "BoringPictureBean.h"
 
 NS_ASSUME_NONNULL_BEGIN
-typedef void(^LoadBoringPictureList)(BOOL success,NSArray<BoringPictureBean *> * date);
+typedef void(^LoadBoringPictureList)(BOOL success, NSArray<BoringPictureBean *> * _Nullable date);
 @interface BoringPictureListLoader : NSObject
 
 -(void) loadBoringPictureListWithBlock:(LoadBoringPictureList) block;

@@ -8,5 +8,6 @@ target 'jandan' do
   # Pods for jandan
   pod 'AFNetworking'
   pod 'SDWebImage'
+  pod 'Masonry', '1.1.0'
 
 end

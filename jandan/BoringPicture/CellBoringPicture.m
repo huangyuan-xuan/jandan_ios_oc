@@ -158,29 +158,35 @@
                                     multiplier:1
                                       constant:0],
         
-        [NSLayoutConstraint constraintWithItem:_contentImageView attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1 constant:120],
+
+        [NSLayoutConstraint constraintWithItem:_contentImageView attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:self.contentView attribute:NSLayoutAttributeWidth multiplier:1 constant:0],
         
-        [NSLayoutConstraint constraintWithItem:_contentImageView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1 constant:80],
         [NSLayoutConstraint constraintWithItem:_contentImageView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:_contentLabel attribute:NSLayoutAttributeBottom multiplier:1 constant:0],
         
     
         [NSLayoutConstraint constraintWithItem:_positiveVoteLabel attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:_contentImageView attribute:NSLayoutAttributeBottom multiplier:1 constant:0],
         [NSLayoutConstraint constraintWithItem:_positiveVoteLabel attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:self.contentView attribute:NSLayoutAttributeWidth multiplier:0.25 constant:0],
         [NSLayoutConstraint constraintWithItem:_positiveVoteLabel attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self.contentView attribute:NSLayoutAttributeLeft multiplier:1 constant:0],
+         [NSLayoutConstraint constraintWithItem:_positiveVoteLabel attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.contentView attribute:NSLayoutAttributeBottom multiplier:1 constant:0],
         
         
         
         [NSLayoutConstraint constraintWithItem:_negativeVoteLabel attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:_contentImageView attribute:NSLayoutAttributeBottom multiplier:1 constant:0],
+        [NSLayoutConstraint constraintWithItem:_negativeVoteLabel attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.contentView attribute:NSLayoutAttributeBottom multiplier:1 constant:0],
          [NSLayoutConstraint constraintWithItem:_negativeVoteLabel attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:self.contentView attribute:NSLayoutAttributeWidth multiplier:0.25 constant:0],
          [NSLayoutConstraint constraintWithItem:_negativeVoteLabel attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:_positiveVoteLabel attribute:NSLayoutAttributeRight multiplier:1 constant:0],
         
         [NSLayoutConstraint constraintWithItem:_commentCountLabel attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:_contentImageView attribute:NSLayoutAttributeBottom multiplier:1 constant:0],
          [NSLayoutConstraint constraintWithItem:_commentCountLabel attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:self.contentView attribute:NSLayoutAttributeWidth multiplier:0.25 constant:0],
         [NSLayoutConstraint constraintWithItem:_commentCountLabel attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:_negativeVoteLabel attribute:NSLayoutAttributeRight multiplier:1 constant:0],
+        [NSLayoutConstraint constraintWithItem:_commentCountLabel attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.contentView attribute:NSLayoutAttributeBottom multiplier:1 constant:0],
+        
+        
         
          [NSLayoutConstraint constraintWithItem:_moreFunctionLabel attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:_contentImageView attribute:NSLayoutAttributeBottom multiplier:1 constant:0],
         [NSLayoutConstraint constraintWithItem:_moreFunctionLabel attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:self.contentView attribute:NSLayoutAttributeWidth multiplier:0.25 constant:0],
         [NSLayoutConstraint constraintWithItem:_moreFunctionLabel attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self.contentView attribute:NSLayoutAttributeRight multiplier:1 constant:0],
+        [NSLayoutConstraint constraintWithItem:_moreFunctionLabel attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.contentView attribute:NSLayoutAttributeBottom multiplier:1 constant:0],
         
         
     ]];
