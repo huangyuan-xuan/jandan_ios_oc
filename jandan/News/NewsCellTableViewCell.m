@@ -10,6 +10,7 @@
 
 #import "NewsBean.h"
 #import <SDWebImage.h>
+#import <Masonry.h>
 @interface NewsCellTableViewCell()
 
 @property(nonatomic,strong,readwrite) UILabel *titleLabel;
@@ -112,82 +113,34 @@
     }];
     
     
-    [NSLayoutConstraint activateConstraints:@[
-        
-        
-        [NSLayoutConstraint constraintWithItem:_converImageView attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1 constant:120],
-        
-        [NSLayoutConstraint constraintWithItem:_converImageView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1 constant:80],
-        
-        [NSLayoutConstraint constraintWithItem:_converImageView attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self.contentView attribute:NSLayoutAttributeRight multiplier:1 constant:0],
-        [NSLayoutConstraint constraintWithItem:_converImageView attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:self.contentView attribute:NSLayoutAttributeCenterY multiplier:1 constant:0],
-        
-        
-        
-        
-        
-        [NSLayoutConstraint constraintWithItem:_titleLabel attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationLessThanOrEqual toItem:self.contentView attribute:NSLayoutAttributeWidth multiplier:1 constant:0 ],
-        [NSLayoutConstraint constraintWithItem:_titleLabel attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:_converImageView attribute:NSLayoutAttributeLeft multiplier:1 constant:-6 ],
-        [NSLayoutConstraint constraintWithItem:_titleLabel attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self.contentView attribute:NSLayoutAttributeLeft multiplier:1 constant:10 ],
-        [NSLayoutConstraint constraintWithItem:_titleLabel attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:_converImageView attribute:NSLayoutAttributeTop multiplier:1 constant:0 ],
-        
-        
-        
-        
-        [NSLayoutConstraint constraintWithItem:_commentLabel
-                                     attribute:NSLayoutAttributeBottom
-                                     relatedBy:NSLayoutRelationEqual
-                                        toItem:_converImageView
-                                     attribute:NSLayoutAttributeBottom
-                                    multiplier:1
-                                      constant:0],
-        [NSLayoutConstraint constraintWithItem:_commentLabel
-                                     attribute:NSLayoutAttributeRight
-                                     relatedBy:NSLayoutRelationEqual
-                                        toItem:_converImageView
-                                     attribute:NSLayoutAttributeLeft
-                                    multiplier:1
-                                      constant:-10],
-        
-        
-        
-        
-        
-        [NSLayoutConstraint constraintWithItem:_authorNameLabel
-                                     attribute:NSLayoutAttributeLeft
-                                     relatedBy:NSLayoutRelationEqual
-                                        toItem:_titleLabel
-                                     attribute:NSLayoutAttributeLeft
-                                    multiplier:1
-                                      constant:0],
-        [NSLayoutConstraint constraintWithItem:_authorNameLabel
-                                     attribute:NSLayoutAttributeBottom
-                                     relatedBy:NSLayoutRelationEqual
-                                        toItem:_converImageView
-                                     attribute:NSLayoutAttributeBottom
-                                    multiplier:1
-                                      constant:0],
-        
-        [NSLayoutConstraint constraintWithItem:_timeLabel
-                                     attribute:NSLayoutAttributeBottom
-                                     relatedBy:NSLayoutRelationEqual
-                                        toItem:_converImageView
-                                     attribute:NSLayoutAttributeBottom
-                                    multiplier:1
-                                      constant:0],
-        [NSLayoutConstraint constraintWithItem:_timeLabel
-                                     attribute:NSLayoutAttributeLeft
-                                     relatedBy:NSLayoutRelationGreaterThanOrEqual
-                                        toItem:_authorNameLabel
-                                     attribute:NSLayoutAttributeRight
-                                    multiplier:1
-                                      constant:10],
-        
-        
-        
-    ]];
+    [_converImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.width.equalTo(@120);
+        make.height.equalTo(@80);
+        make.right.equalTo(self.contentView.mas_right).with.offset(-10);
+        make.centerY.equalTo(self.contentView.mas_centerY);
+
+    }];
     
+    [_titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+       
+        make.top.equalTo(self.contentView.mas_top).and.offset(10);
+        make.left.equalTo(self.contentView.mas_left).and.offset(10);
+        make.right.equalTo(_converImageView.mas_left).and.offset(-10);
+        
+    }];
     
+    [_authorNameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.contentView.mas_left).and.offset(10);
+        make.bottom.equalTo(_converImageView.mas_bottom);
+    }];
+    [_timeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(_authorNameLabel.mas_right).and.offset(10);
+        make.bottom.equalTo(_converImageView.mas_bottom);
+    }];
+    [_commentLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.equalTo(_converImageView.mas_left).and.offset(-10);
+        make.bottom.equalTo(_converImageView.mas_bottom);
+    }];
 }
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];

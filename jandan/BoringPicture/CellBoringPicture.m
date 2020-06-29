@@ -8,7 +8,7 @@
 
 #import "CellBoringPicture.h"
 #import <SDWebImage.h>
-
+#import <Masonry.h>
 @interface CellBoringPicture()
 
 @property(nonatomic,strong,readwrite) UILabel *authorLabel;
@@ -108,88 +108,41 @@
     
     
     
+    [_authorLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.contentView.mas_top);
+        make.width.equalTo(self.contentView);
+        
+    }];
+    [_timeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(_authorLabel.mas_bottom);
+        make.width.equalTo(self.contentView);
+        
+    }];
+    [_contentLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(_timeLabel.mas_bottom);
+        make.width.equalTo(self.contentView);
+        
+    }];
+    [_contentImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(_contentLabel.mas_bottom);
+        make.width.equalTo(self.contentView);
+        
+    }];
     
-    [NSLayoutConstraint activateConstraints: @[
-        
-        [NSLayoutConstraint constraintWithItem: _authorLabel
-                                     attribute:NSLayoutAttributeWidth
-                                     relatedBy:NSLayoutRelationEqual
-                                        toItem:self.contentView
-                                     attribute:NSLayoutAttributeWidth
-                                    multiplier:1
-                                      constant:0],
-        [NSLayoutConstraint constraintWithItem: _authorLabel
-                                     attribute:NSLayoutAttributeTop
-                                     relatedBy:NSLayoutRelationEqual
-                                        toItem:self.contentView
-                                     attribute:NSLayoutAttributeTop
-                                    multiplier:1
-                                      constant:0],
-        
-        
-        
-        [NSLayoutConstraint constraintWithItem: _timeLabel
-                                     attribute:NSLayoutAttributeWidth
-                                     relatedBy:NSLayoutRelationEqual
-                                        toItem:self.contentView
-                                     attribute:NSLayoutAttributeWidth
-                                    multiplier:1
-                                      constant:0],
-        [NSLayoutConstraint constraintWithItem: _timeLabel
-                                     attribute:NSLayoutAttributeTop
-                                     relatedBy:NSLayoutRelationEqual
-                                        toItem:_authorLabel
-                                     attribute:NSLayoutAttributeBottom
-                                    multiplier:1
-                                      constant:0],
-        
-        [NSLayoutConstraint constraintWithItem: _contentLabel
-                                     attribute:NSLayoutAttributeWidth
-                                     relatedBy:NSLayoutRelationEqual
-                                        toItem:self.contentView
-                                     attribute:NSLayoutAttributeWidth
-                                    multiplier:1
-                                      constant:0],
-        [NSLayoutConstraint constraintWithItem: _contentLabel
-                                     attribute:NSLayoutAttributeTop
-                                     relatedBy:NSLayoutRelationEqual
-                                        toItem:_timeLabel
-                                     attribute:NSLayoutAttributeBottom
-                                    multiplier:1
-                                      constant:0],
-        
-
-        [NSLayoutConstraint constraintWithItem:_contentImageView attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:self.contentView attribute:NSLayoutAttributeWidth multiplier:1 constant:0],
-        
-        [NSLayoutConstraint constraintWithItem:_contentImageView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:_contentLabel attribute:NSLayoutAttributeBottom multiplier:1 constant:0],
-        
     
-        [NSLayoutConstraint constraintWithItem:_positiveVoteLabel attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:_contentImageView attribute:NSLayoutAttributeBottom multiplier:1 constant:0],
-        [NSLayoutConstraint constraintWithItem:_positiveVoteLabel attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:self.contentView attribute:NSLayoutAttributeWidth multiplier:0.25 constant:0],
-        [NSLayoutConstraint constraintWithItem:_positiveVoteLabel attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self.contentView attribute:NSLayoutAttributeLeft multiplier:1 constant:0],
-         [NSLayoutConstraint constraintWithItem:_positiveVoteLabel attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.contentView attribute:NSLayoutAttributeBottom multiplier:1 constant:0],
-        
-        
-        
-        [NSLayoutConstraint constraintWithItem:_negativeVoteLabel attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:_contentImageView attribute:NSLayoutAttributeBottom multiplier:1 constant:0],
-        [NSLayoutConstraint constraintWithItem:_negativeVoteLabel attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.contentView attribute:NSLayoutAttributeBottom multiplier:1 constant:0],
-         [NSLayoutConstraint constraintWithItem:_negativeVoteLabel attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:self.contentView attribute:NSLayoutAttributeWidth multiplier:0.25 constant:0],
-         [NSLayoutConstraint constraintWithItem:_negativeVoteLabel attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:_positiveVoteLabel attribute:NSLayoutAttributeRight multiplier:1 constant:0],
-        
-        [NSLayoutConstraint constraintWithItem:_commentCountLabel attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:_contentImageView attribute:NSLayoutAttributeBottom multiplier:1 constant:0],
-         [NSLayoutConstraint constraintWithItem:_commentCountLabel attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:self.contentView attribute:NSLayoutAttributeWidth multiplier:0.25 constant:0],
-        [NSLayoutConstraint constraintWithItem:_commentCountLabel attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:_negativeVoteLabel attribute:NSLayoutAttributeRight multiplier:1 constant:0],
-        [NSLayoutConstraint constraintWithItem:_commentCountLabel attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.contentView attribute:NSLayoutAttributeBottom multiplier:1 constant:0],
-        
-        
-        
-         [NSLayoutConstraint constraintWithItem:_moreFunctionLabel attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:_contentImageView attribute:NSLayoutAttributeBottom multiplier:1 constant:0],
-        [NSLayoutConstraint constraintWithItem:_moreFunctionLabel attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:self.contentView attribute:NSLayoutAttributeWidth multiplier:0.25 constant:0],
-        [NSLayoutConstraint constraintWithItem:_moreFunctionLabel attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self.contentView attribute:NSLayoutAttributeRight multiplier:1 constant:0],
-        [NSLayoutConstraint constraintWithItem:_moreFunctionLabel attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.contentView attribute:NSLayoutAttributeBottom multiplier:1 constant:0],
-        
-        
-    ]];
+    NSMutableArray *functionViews = [NSMutableArray array];
+    [functionViews addObject:_positiveVoteLabel];
+     [functionViews addObject:_negativeVoteLabel];
+     [functionViews addObject:_commentCountLabel];
+     [functionViews addObject:_moreFunctionLabel];
+    
+    [functionViews mas_distributeViewsAlongAxis:MASAxisTypeHorizontal withFixedSpacing:0 leadSpacing:0 tailSpacing:0];
+    
+    [functionViews mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(_contentImageView.mas_bottom);
+        make.bottom.equalTo(self.contentView);
+    }];
+    
     
 }
 
