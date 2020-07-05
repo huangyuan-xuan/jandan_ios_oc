@@ -28,6 +28,7 @@
     
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     
+    self.contentView.backgroundColor = [UIColor grayColor];
     
     [self.contentView addSubview:({
         _authorLabel = [[UILabel alloc]init];

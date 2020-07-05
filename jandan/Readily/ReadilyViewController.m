@@ -15,6 +15,7 @@
 @property(nonatomic,strong,readwrite) UITableView *tableView;
 @property(nonatomic,strong,readwrite) NSArray<BoringPictureBean *> *dataArray;
 @property(nonatomic,strong,readwrite) ReadilyListLoader *listLoader;
+@property(nonatomic,strong,readwrite) UIActivityIndicatorView * loadingView;
 @end
 
 @implementation ReadilyViewController
@@ -27,6 +28,19 @@
     _tableView.dataSource = self;
     _tableView.delegate = self;
     [self.view addSubview:_tableView];
+    
+    
+    _loadingView = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+    _loadingView.color = [UIColor redColor];
+    [self.view addSubview:_loadingView];
+    [_loadingView startAnimating];
+    
+    [_loadingView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(self.view);
+        make.centerY.equalTo(self.view);
+        
+    }];
+    
     
     _listLoader = [[ReadilyListLoader alloc]init];
     
