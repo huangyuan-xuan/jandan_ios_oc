@@ -50,6 +50,14 @@
 }
 
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    
+    return [[[_dataArray objectAtIndex:indexPath.row].pictureModels firstObject].height intValue];
+    
+}
+
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return _dataArray.count ;
 }

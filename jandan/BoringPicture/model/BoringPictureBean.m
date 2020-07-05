@@ -22,7 +22,16 @@
         self.votePositive = [dict objectForKey:@"vote_positive"];
         self.textContent = [dict objectForKey:@"text_content"];
         self.subCommentCount = [dict objectForKey:@"sub_comment_count"];
-        self.pics = [dict objectForKey:@"pics"];
+        
+        
+        NSMutableArray<PictureModel *> *array = [[NSMutableArray alloc]init];
+        for(NSString *url in  [dict objectForKey:@"pics"]){
+            PictureModel *pic = [[PictureModel alloc] fromUrl:url];
+            [array addObject:pic];
+        }
+        
+        self.pictureModels  = array;
+        
         
     }
     return self;

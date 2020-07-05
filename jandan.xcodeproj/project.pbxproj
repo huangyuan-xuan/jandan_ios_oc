@@ -30,6 +30,8 @@
 		F10BEB1424A64A5900C52CD7 /* ReadilyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F10BEB1324A64A5900C52CD7 /* ReadilyViewController.m */; };
 		F10BEB1724A64A6D00C52CD7 /* BoringPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F10BEB1624A64A6D00C52CD7 /* BoringPictureViewController.m */; };
 		F10BEB1A24A64A7E00C52CD7 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F10BEB1924A64A7E00C52CD7 /* NewsViewController.m */; };
+		F10BEB2324B2011500C52CD7 /* ImageSizeWithUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = F10BEB2224B2011500C52CD7 /* ImageSizeWithUrl.m */; };
+		F10BEB2624B2099400C52CD7 /* PictureModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F10BEB2524B2099400C52CD7 /* PictureModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +80,11 @@
 		F10BEB1624A64A6D00C52CD7 /* BoringPictureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BoringPictureViewController.m; sourceTree = "<group>"; };
 		F10BEB1824A64A7E00C52CD7 /* NewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
 		F10BEB1924A64A7E00C52CD7 /* NewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
+		F10BEB2124B2011500C52CD7 /* ImageSizeWithUrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageSizeWithUrl.h; sourceTree = "<group>"; };
+		F10BEB2224B2011500C52CD7 /* ImageSizeWithUrl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageSizeWithUrl.m; sourceTree = "<group>"; };
+		F10BEB2424B2099400C52CD7 /* PictureModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PictureModel.h; sourceTree = "<group>"; };
+		F10BEB2524B2099400C52CD7 /* PictureModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PictureModel.m; sourceTree = "<group>"; };
+		F10BEB2724B2141400C52CD7 /* Macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +108,8 @@
 				5B5C0D8624A8536B00B1A4EF /* BoringPictureBean.m */,
 				5B5C0D8824A8557200B1A4EF /* BoringPictureListModel.h */,
 				5B5C0D8924A8557200B1A4EF /* BoringPictureListModel.m */,
+				F10BEB2424B2099400C52CD7 /* PictureModel.h */,
+				F10BEB2524B2099400C52CD7 /* PictureModel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -181,6 +190,9 @@
 				F10BEAE824A5A1D800C52CD7 /* main.m */,
 				5BFC11AE24A7450400237C94 /* MainViewController.h */,
 				5BFC11AF24A7450400237C94 /* MainViewController.m */,
+				F10BEB2124B2011500C52CD7 /* ImageSizeWithUrl.h */,
+				F10BEB2224B2011500C52CD7 /* ImageSizeWithUrl.m */,
+				F10BEB2724B2141400C52CD7 /* Macro.h */,
 			);
 			path = jandan;
 			sourceTree = "<group>";
@@ -328,6 +340,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F10BEB1724A64A6D00C52CD7 /* BoringPictureViewController.m in Sources */,
+				F10BEB2624B2099400C52CD7 /* PictureModel.m in Sources */,
 				F10BEAF624A6341800C52CD7 /* NewsDetailViewController.m in Sources */,
 				F10BEAD824A5A1D700C52CD7 /* AppDelegate.m in Sources */,
 				5BFC11B724A7499800237C94 /* CustomFields.m in Sources */,
@@ -337,6 +350,7 @@
 				5BFC11BD24A74A7700237C94 /* NewsModel.m in Sources */,
 				5B5C0D8724A8536B00B1A4EF /* BoringPictureBean.m in Sources */,
 				5B5C0D9424A9DCF700B1A4EF /* CellReadily.m in Sources */,
+				F10BEB2324B2011500C52CD7 /* ImageSizeWithUrl.m in Sources */,
 				F10BEAE924A5A1D800C52CD7 /* main.m in Sources */,
 				5B5C0D8424A8531100B1A4EF /* BoringPictureListLoader.m in Sources */,
 				F10BEB1A24A64A7E00C52CD7 /* NewsViewController.m in Sources */,

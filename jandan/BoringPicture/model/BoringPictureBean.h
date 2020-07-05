@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "PictureModel.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BoringPictureBean : NSObject
@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,copy) NSString * voteNegative;
 @property(nonatomic,copy) NSString * subCommentCount;
 @property(nonatomic,copy) NSString * textContent;
-@property(nonatomic,copy) NSArray<NSString *> * pics;
+@property(nonatomic,copy) NSArray<PictureModel *> * pictureModels;
 
 
 -(instancetype) fromJsonDict:(NSDictionary *) dict;

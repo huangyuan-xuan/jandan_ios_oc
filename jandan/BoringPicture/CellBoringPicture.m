@@ -101,7 +101,7 @@
     _commentCountLabel.text = [@"吐槽" stringByAppendingString:bean.subCommentCount];
     
     
-    NSURL *imageUrl = [NSURL URLWithString: [bean.pics firstObject]];
+    NSURL *imageUrl = [NSURL URLWithString: [bean.pictureModels firstObject].url];
     
     
     [_contentImageView sd_setImageWithURL: imageUrl];

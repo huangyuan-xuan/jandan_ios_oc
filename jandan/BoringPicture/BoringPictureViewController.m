@@ -54,9 +54,12 @@
 //}
 
 
-//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-//    return 230;
-//}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+  return  [[[_dataArray objectAtIndex:indexPath.row].pictureModels firstObject].height intValue];
+    
+    
+}
 
 
 
